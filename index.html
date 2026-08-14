@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; base-uri &#39;self&#39;; object-src &#39;none&#39;; script-src &#39;self&#39; &#39;sha256-YSspRYZ2QzolqOh9194lvc0cwS8j09/gGS0syWWulWs=&#39; https://js.tosspayments.com; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://4tto6yly6y4v32fnvxkticyxaq0pfulm.lambda-url.ap-northeast-2.on.aws https://zjg6mfrrypu72drstfm6sf25ru0rcwsp.lambda-url.ap-northeast-2.on.aws https://zzbte5675lkgdyn2as7pncx4au0pranb.lambda-url.ap-northeast-2.on.aws https://refn7a6522donjaieni3euprjy0pyggk.lambda-url.ap-northeast-2.on.aws https://c4rvma2lbu4wbwrnkqborh6l4q0cjymy.lambda-url.ap-northeast-2.on.aws https://435diobrtqgc4f7zookihektkq0qzrrp.lambda-url.ap-northeast-2.on.aws https://wmaoqas3k4qvmt2mhooagydw4a0imqrq.lambda-url.ap-northeast-2.on.aws https://uq5faemprzv57vvcqyhvxudvve0wxijw.lambda-url.ap-northeast-2.on.aws https://cognito-idp.ap-northeast-2.amazonaws.com https://cognito-identity.ap-northeast-2.amazonaws.com https://stockquant.auth.ap-northeast-2.amazoncognito.com https://*.tosspayments.com; frame-src https:">
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; base-uri &#39;self&#39;; object-src &#39;none&#39;; script-src &#39;self&#39; &#39;sha256-RmXrg53HTXLt23jebZjUNZgoq4Z0Es1JYBq6BnXRgtY=&#39; https://js.tosspayments.com; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://4tto6yly6y4v32fnvxkticyxaq0pfulm.lambda-url.ap-northeast-2.on.aws https://zjg6mfrrypu72drstfm6sf25ru0rcwsp.lambda-url.ap-northeast-2.on.aws https://zzbte5675lkgdyn2as7pncx4au0pranb.lambda-url.ap-northeast-2.on.aws https://refn7a6522donjaieni3euprjy0pyggk.lambda-url.ap-northeast-2.on.aws https://c4rvma2lbu4wbwrnkqborh6l4q0cjymy.lambda-url.ap-northeast-2.on.aws https://435diobrtqgc4f7zookihektkq0qzrrp.lambda-url.ap-northeast-2.on.aws https://wmaoqas3k4qvmt2mhooagydw4a0imqrq.lambda-url.ap-northeast-2.on.aws https://uq5faemprzv57vvcqyhvxudvve0wxijw.lambda-url.ap-northeast-2.on.aws https://cognito-idp.ap-northeast-2.amazonaws.com https://cognito-identity.ap-northeast-2.amazonaws.com https://stockquant.auth.ap-northeast-2.amazoncognito.com https://*.tosspayments.com; frame-src https:">
 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./images/stock_quant_favicon.png" />
@@ -19,14 +19,15 @@
     <meta property="og:url" content="https://stockquant.kr/" />
     <meta property="og:title" content="StockQuant — 데이터 기반 주식 차트·분석 도구" />
     <meta property="og:description" content="코스피·코스닥 3,000여 종목의 일봉 차트, 국면·박스권 자동 분석, 종목 간 상관 분석을 웹에서 바로 이용하세요. 현재 무료 베타 운영 중." />
-    <meta property="og:image" content="https://shin-jongwhan.github.io/stock_quant_web_public/images/stock_quant_favicon.png" />
+    <meta property="og:image" content="https://stockquant.kr/images/stock_quant_favicon.png" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="StockQuant" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- 파비콘(정사각 소형)을 쓰므로 summary. 1200x630 전용 이미지를 만들면 summary_large_image 로 올릴 것 -->
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="StockQuant — 데이터 기반 주식 차트·분석 도구" />
     <meta name="twitter:description" content="코스피·코스닥 3,000여 종목의 일봉 차트, 국면·박스권 자동 분석, 종목 간 상관 분석을 웹에서 바로 이용하세요." />
-    <meta name="twitter:image" content="https://shin-jongwhan.github.io/stock_quant_web_public/images/stock_quant_favicon.png" />
+    <meta name="twitter:image" content="https://stockquant.kr/images/stock_quant_favicon.png" />
 
     <script type="application/ld+json">
     {
@@ -37,19 +38,41 @@
       "url": "https://stockquant.kr/",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Android, iOS, Windows, macOS",
+      "featureList": [
+        "코스피·코스닥 전 종목 일봉 캔들차트 조회",
+        "국면·박스권 자동 분석 오버레이",
+        "종목 간 상관 분석 및 수익률 비교",
+        "재무 지표 조회 및 조건 검색",
+        "분할 매수 계산기"
+      ],
       "offers": [
         {
           "@type": "Offer",
           "name": "베타테스트",
           "price": "0",
           "priceCurrency": "KRW",
-          "description": "베타테스트 기간 전 서비스 무료 제공"
+          "description": "베타테스트 기간 중 무료 제공"
         }
       ],
       "provider": {
-        "@type": "Person",
-        "name": "신종환",
-        "email": "stockop123@naver.com"
+        "@type": "Organization",
+        "name": "스타캅 (STOCKOP)",
+        "alternateName": "STOCK QUANT",
+        "url": "https://stockquant.kr/",
+        "email": "stockop123@naver.com",
+        "telephone": "+82-70-8984-4967",
+        "founder": { "@type": "Person", "name": "신종환" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "포은대로59번길 37, 시그니처 광교 A동 306호 (상현동)",
+          "addressLocality": "용인시 수지구",
+          "addressRegion": "경기도",
+          "addressCountry": "KR"
+        },
+        "identifier": [
+          { "@type": "PropertyValue", "name": "사업자등록번호", "value": "321-26-01416" },
+          { "@type": "PropertyValue", "name": "통신판매업신고번호", "value": "2026-용인수지-2938" }
+        ]
       }
     }
     </script>
