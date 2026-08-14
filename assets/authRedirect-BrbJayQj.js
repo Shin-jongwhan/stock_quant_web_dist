@@ -1,0 +1,1 @@
+const i={session_evicted:"device",ip_reauth_required:"ip"};let t=!1;function r(o){if(t)return;t=!0;const n=encodeURIComponent(window.location.pathname),e=i[o]||"";window.location.href=`/login/?next=${n}${e?`&reason=${e}`:""}`}async function s(o){var e;let n="";try{n=((e=await o.clone().json())==null?void 0:e.error_message)||""}catch{}r(n)}export{s as h};
