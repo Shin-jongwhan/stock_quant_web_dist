@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/auth-D0m2jQva.js","assets/index-g5UgXZSA.js","assets/index-CftWuMsp.css","assets/preload-helper-ckwbz45p.js"])))=>i.map(i=>d[i]);
-import{r as a,j as e,R as G,a as J}from"./index-g5UgXZSA.js";import{A as Q}from"./AuthGate-DGr3iCEn.js";import{_ as q}from"./preload-helper-ckwbz45p.js";import{N as g}from"./Navbar-CE1TP-0T.js";import{F as C}from"./Footer-B8z6u32C.js";import{f as E,x as D}from"./auth-D0m2jQva.js";const U={inquiry:"문의",feedback:"피드백",bug:"오류",feature:"기능"},_=20,W=`안녕하세요. Stock Quant 팀입니다.
+import{r as a,j as e,R as G,a as J}from"./index-g5UgXZSA.js";import{A as Q}from"./AuthGate-DGr3iCEn.js";import{_ as q}from"./preload-helper-ckwbz45p.js";import{N as g}from"./Navbar-aytrgpB5.js";import{F as C}from"./Footer-B8z6u32C.js";import{f as E,x as D}from"./auth-D0m2jQva.js";const U={inquiry:"문의",feedback:"피드백",bug:"오류",feature:"기능"},_=20,W=`안녕하세요. Stock Quant 팀입니다.
 
 (내용)
 
