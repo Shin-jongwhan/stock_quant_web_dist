@@ -1,4 +1,4 @@
-import{j as s,r as h,R as b,a as w}from"./index-g5UgXZSA.js";import{A as E}from"./AuthGate-DGr3iCEn.js";import{N as L}from"./Navbar-aytrgpB5.js";import{F as M}from"./Footer-B8z6u32C.js";import{S as R}from"./StockSearchBox-C5jTrceb.js";import{a as k}from"./dataLoader-Cf879fOi.js";import{f as W,u as P}from"./auth-D0m2jQva.js";import{h as A}from"./authRedirect-BrbJayQj.js";import"./preload-helper-ckwbz45p.js";import"./dataGate-ABIjPJJN.js";import"./idbCache-CYlA69ML.js";const u=new Map,D=40,I=`아래는 국내 주식 한 종목의 기술적·재무 분석 리포트입니다.
+import{j as s,r as h,R as b,a as w}from"./index-g5UgXZSA.js";import{A as E}from"./AuthGate-DGr3iCEn.js";import{N as L}from"./Navbar-aytrgpB5.js";import{F as M}from"./Footer-DxbLxo_2.js";import{S as R}from"./StockSearchBox-C5jTrceb.js";import{a as k}from"./dataLoader-Cf879fOi.js";import{f as W,u as P}from"./auth-D0m2jQva.js";import{h as A}from"./authRedirect-BrbJayQj.js";import"./preload-helper-ckwbz45p.js";import"./dataGate-ABIjPJJN.js";import"./idbCache-CYlA69ML.js";const u=new Map,D=40,I=`아래는 국내 주식 한 종목의 기술적·재무 분석 리포트입니다.
 이 자료를 근거로 **종합 평가**를 해주세요. 자료 요약이 아니라 당신의 판단을 원합니다.
 
 1. 종합 판단 — 이 종목이 지금 어떤 상태인지 결론부터 3~4문장으로.
