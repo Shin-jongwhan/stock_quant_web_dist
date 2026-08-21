@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="STOCK QUANT">
+  <!-- 분포 막대(quant) 가운데 상승 캔들(stock). 원본·파생본은 test/logo/ 참조 -->
+  <g fill="#f3b5b1">
+    <rect x="13" y="85" width="14" height="18" rx="3"/>
+    <rect x="33" y="59" width="14" height="44" rx="3"/>
+    <rect x="73" y="59" width="14" height="44" rx="3"/>
+    <rect x="93" y="85" width="14" height="18" rx="3"/>
+  </g>
+  <path d="M60 19 L60 44" stroke="#b91c1c" stroke-width="6" stroke-linecap="round"/>
+  <rect x="53" y="41" width="14" height="62" rx="3" fill="#b91c1c"/>
+</svg>
