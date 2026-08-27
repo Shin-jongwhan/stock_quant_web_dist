@@ -1,1 +1,0 @@
-import{j as s}from"./index-g5UgXZSA.js";function o(){return s.jsxs("span",{className:"brand-logo",children:[s.jsx("img",{className:"brand-logo-mark",src:"/images/logo_symbol.svg",alt:"","aria-hidden":"true"}),s.jsxs("span",{className:"brand-logo-text",children:["STOCK ",s.jsx("span",{className:"brand-logo-accent",children:"QUANT"})]})]})}export{o as B};
