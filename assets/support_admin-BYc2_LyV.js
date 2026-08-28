@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/auth-Ccjye0xw.js","assets/index-BX1Vulh4.js","assets/index-xQ9nGfv4.css","assets/preload-helper-ckwbz45p.js"])))=>i.map(i=>d[i]);
-import{r as a,j as e,R as q,a as U}from"./index-BX1Vulh4.js";import{A as W}from"./AuthGate-DRAUH60_.js";import{_ as Y}from"./preload-helper-ckwbz45p.js";import{N as g}from"./Navbar-DZsRm1tK.js";import{F as E}from"./Footer-BzSCK87U.js";import{f as D,A as R}from"./auth-Ccjye0xw.js";import{L as I}from"./LoadingNote-DeU77XmC.js";import"./BrandLogo-DSrD0uZl.js";const Z={inquiry:"문의",feedback:"피드백",bug:"오류",feature:"기능"},_=20,z=`안녕하세요. Stock Quant 팀입니다.
+import{r as a,j as e,R as q,a as U}from"./index-BX1Vulh4.js";import{A as W}from"./AuthGate-DRAUH60_.js";import{_ as Y}from"./preload-helper-ckwbz45p.js";import{N as g}from"./Navbar-Boe8kjid.js";import{F as E}from"./Footer-BzSCK87U.js";import{f as D,A as R}from"./auth-Ccjye0xw.js";import{L as I}from"./LoadingNote-DeU77XmC.js";import"./BrandLogo-DSrD0uZl.js";const Z={inquiry:"문의",feedback:"피드백",bug:"오류",feature:"기능"},_=20,z=`안녕하세요. Stock Quant 팀입니다.
 
 (내용)
 
