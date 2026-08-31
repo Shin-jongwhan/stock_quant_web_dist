@@ -1,1 +1,0 @@
-import{j as e}from"./index-BX1Vulh4.js";function i({sText:a="데이터 불러오는 중…",blInline:n=!1}){return e.jsxs("div",{className:`loading-note${n?" inline":""}`,role:"status","aria-live":"polite",children:[e.jsx("span",{className:"loading-note-spinner","aria-hidden":"true"}),e.jsx("span",{className:"loading-note-text",children:a})]})}export{i as L};
