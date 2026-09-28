@@ -10,6 +10,11 @@
     - 미배포     : market_index
   이 페이지들은 헤더 내비 링크로 크롤러가 발견하므로 Search Console 색인 보고서에
   "'noindex' 태그에 의해 제외됨" 으로 계속 뜬다 — 오류가 아니라 의도한 상태다.
+
+  AuthGate 로 감싼 도구 페이지(chart/correlation/screener/calculator)도 등록하지 않는다 (2026-09-28 제거).
+  noindex 는 아니지만 크롤러는 항상 비로그인이라 "로그인이 필요합니다" 카드만 보게 되고,
+  같은 화면을 URL 4개로 등록해 두면 색인 예산만 쓴다. 검색 유입은 게이트 바깥의
+  /guide/{topic}/ 정적 페이지가 맡는다 — docs/tasks/20260928_seo_guide_pages.md
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -17,30 +22,6 @@
     <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://stockquant.kr/chart/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stockquant.kr/correlation/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stockquant.kr/screener/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://stockquant.kr/calculator/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://stockquant.kr/pricing/</loc>
