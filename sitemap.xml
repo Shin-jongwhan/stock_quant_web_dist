@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  색인 대상 페이지만 등록한다. noindex 페이지(login/signup/account/payment_history/
-  support_history/support_admin/financial/finder/evaluation/market_index)는 넣지 않는다 —
-  sitemap 에 있는데 noindex 면 Search Console 이 경고를 띄운다.
+  색인 대상 페이지만 등록한다. sitemap 에 있는데 noindex 면 Search Console 이 경고를 띄운다.
+  noindex 페이지는 {page}/index.html 의 <meta name="robots" content="noindex"> 가 원장이며,
+  새 페이지를 만들 때 둘 중 하나만 손대면 어긋나므로 같이 갱신한다. (2026-09-28 기준 16개)
+    - 인증·계정  : login, signup, account, payment_history, support_history
+    - 어드민     : support_admin, survey_admin
+    - 이용권 게이트: financial, finder, evaluation, low_fwd_per, dividend, dividend_attract
+    - 상태 페이지 : limited, maintenance
+    - 미배포     : market_index
+  이 페이지들은 헤더 내비 링크로 크롤러가 발견하므로 Search Console 색인 보고서에
+  "'noindex' 태그에 의해 제외됨" 으로 계속 뜬다 — 오류가 아니라 의도한 상태다.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
