@@ -11,10 +11,11 @@
   이 페이지들은 헤더 내비 링크로 크롤러가 발견하므로 Search Console 색인 보고서에
   "'noindex' 태그에 의해 제외됨" 으로 계속 뜬다 — 오류가 아니라 의도한 상태다.
 
-  AuthGate 로 감싼 도구 페이지(chart/correlation/screener/calculator)도 등록하지 않는다 (2026-09-28 제거).
-  noindex 는 아니지만 크롤러는 항상 비로그인이라 "로그인이 필요합니다" 카드만 보게 되고,
-  같은 화면을 URL 4개로 등록해 두면 색인 예산만 쓴다. 검색 유입은 게이트 바깥의
-  /guide/{topic}/ 정적 페이지가 맡는다 — docs/tasks/20260928_seo_guide_pages.md
+  AuthGate 로 감싼 도구 페이지(chart/correlation/screener/calculator 등)도 등록하지 않는다 (2026-09-28 제거).
+  크롤러는 항상 비로그인이라 도구 URL 은 그 도구의 메뉴얼(/manual/{topic}/?login=required)로
+  리다이렉트된다 — sitemap 에 넣어 봐야 "리디렉션됨" 제외만 쌓인다. 색인 실체는 메뉴얼이므로
+  **메뉴얼 7개를 등록**한다. 메뉴얼은 2026-09-28 랜딩 해시(#manual/{tab}, 크롤러가 버림)에서
+  실경로로 전환했다 — docs/tasks/20260928_seo_guide_pages.md
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -22,6 +23,49 @@
     <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <!-- /manual/{topic}/ — 게이트 바깥 공개 메뉴얼 7개. 도구 URL 대신 이쪽이 색인 대상 -->
+  <url>
+    <loc>https://stockquant.kr/manual/chart/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stockquant.kr/manual/screener/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stockquant.kr/manual/correlation/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stockquant.kr/manual/evaluation/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stockquant.kr/manual/low_fwd_per/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stockquant.kr/manual/dividend_attract/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stockquant.kr/manual/dividend/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://stockquant.kr/pricing/</loc>
