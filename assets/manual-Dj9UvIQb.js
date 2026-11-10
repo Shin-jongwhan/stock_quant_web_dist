@@ -1,0 +1,1 @@
+import{R as o,j as t,a as e}from"./index-BgWb5vyy.js";import{M as c}from"./ManualPage-TLoBqaMa.js";const a=window.location.pathname.match(/^\/manual\/([a-z_]+)\/?/),n=a?a[1]:"chart";o.createRoot(document.getElementById("root")).render(t.jsx(e.StrictMode,{children:t.jsx(c,{sTopic:n})}));
